@@ -1,0 +1,121 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #00FF00, #0000FF);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Centralização e largura do conteúdo */
+main {
+    width: 80%;
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    max-width: 1200px; /* Limita a largura máxima para telas maiores */
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(243, 227, 5, 0.87);
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: linear-gradient(45deg, #005500, #001155);
+    color: white;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Seções */
+section {
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* Projetos */
+.projeto {
+    font-weight: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        width: 90%; /* Para telas menores, ajusta a largura para 90% */
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    .projeto {
+        margin-bottom: 15px;
+    }
+}
+
